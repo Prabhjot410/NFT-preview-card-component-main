@@ -1,0 +1,212 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+   
+}
+
+body{
+    align-items: center;
+    font-weight:300, 400, 600 ;
+    font-family: "Outfit",sans-serif;
+    background-color: hsl(217,54%,11%);
+}
+
+.container{
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+   
+    
+    
+
+}
+
+
+.card-bg{
+   
+    background-color: hsl(216, 50%, 16%) ;
+    border-radius: 25px;
+    width: 50%;
+    max-width: max-content;
+    
+}
+
+img{
+   
+    border-radius: 10px;
+    
+
+    }
+
+
+.img{
+     padding:20px ;
+ 
+    position: relative;
+    cursor: pointer;
+}
+
+#main-img{
+    width: 100%;
+    height: 100%;
+   
+}
+
+.overlay {
+    position: absolute;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: cyan;
+    background-image: url(./images/icon-view.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    translate: 1s all ease-in-out;
+  
+}
+
+ .img .overlay:hover  {
+    opacity: .5;
+    margin: 3%;
+    width: 94%;
+    height: 94%;
+}
+
+.card-h{
+    padding-top: 20px;
+    color:cyan;
+    font-size: 3.5vw;
+    padding:20px ;
+    display: flex;
+    overflow:hidden;
+    cursor:pointer;
+}
+
+.card-p{
+    padding:20px ;
+    color: hsl(215,32%,27%);
+    font-size: 2.4vw;
+    width: 100%;
+}
+
+
+
+.icon-left{
+    float: left;
+    padding: 20px;
+    color: cyan;
+    font-size: 2vw;
+
+}
+
+.icon-right{
+    float: right;
+    padding: 20px;
+    color: hsl(215,32%,27%);
+    font-size: 2vw;
+}
+
+.border{
+    margin: 20px;
+    padding: 20px;
+    border-bottom: 2px hsl(215,32%,27%) solid;
+}
+
+.author{
+    display: flex;
+    padding: 20px;
+}
+.author-img{
+    
+    margin-right: 15px;
+    height: 5vw;
+    width: 5vw;
+    border-radius: 100%;
+    border: 2px white solid;
+    
+}
+
+.txt{
+    color:hsl(215,32%,27%);
+    
+}
+
+.txt1{
+    color:white;
+    text-indent: 0.5em;
+    overflow:hidden;
+    cursor:pointer;
+}
+
+.txt1:hover {
+    color:cyan;
+}
+
+a{
+    font-size: 2vw;
+    text-decoration: none;
+}
+
+@media screen and (max-width:450px){
+   .container{
+        margin: 15px;
+        
+        
+        justify-content: center;
+        align-items: center;
+   }
+
+   .card-bg{
+       width: 100%;
+       height: auto;
+      
+   }
+  .card-h{
+      font-size: 6vw;
+  }
+ .card-p{
+     font-size: 4.4vw;
+ }
+
+.icon-left{
+    font-size: 3.5vw;
+}
+
+.icon-right{
+    font-size: 3.5vw;
+}
+
+.author-img{
+    height: 10vw;
+    width: 10vw;
+}
+
+a{
+    font-size: 4vw;
+    
+}
+
+ .img .overlay:hover  {
+    opacity: .5;
+    margin: 6%;
+    width: 88%;
+    height: 87%;
+}
+}
+ 
+}
+
+@media screen and (max-width:760px) and (min-width:460px){
+    .img .overlay:hover  {
+    opacity: .5;
+    margin: 5%;
+    width: 90%;
+    height: 90%;
+}
+}
